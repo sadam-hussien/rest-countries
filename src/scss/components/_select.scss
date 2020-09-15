@@ -1,0 +1,88 @@
+.select-filter {
+    position: relative;
+    cursor: pointer;
+
+    .filter-result {
+        height: 40px;
+        background: $dark-mode-el;
+        border-radius: 4px;
+        box-shadow: 0 0 10px rgba($dark, .5);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 $small;
+        min-width: 140px;
+        color: $light-mode-inp;
+        font-size: 14px;
+        text-transform: capitalize;
+        cursor: pointer;
+
+        .icon {
+            width: 8px;
+            height: 8px;
+            border-right: 2px solid $light-mode-inp;
+            border-bottom: 2px solid $light-mode-inp;
+            transform: translateY(-20%) rotate(45deg);
+            margin-left: $small;
+        }
+
+        &:hover {
+            color: $sub-color;
+
+            .icon {
+                border-right: 2px solid $sub-color;
+                border-bottom: 2px solid $sub-color;
+            }
+        }
+    }
+
+    .filter-list {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+        background: $dark-mode-el;
+        border-top: 1px solid $sub-color;
+        padding-top: $small !important;
+        transform-origin: top;
+        transform: scaleY(0);
+        transition: transform .5s ease-in-out;
+
+        &.active {
+            transform: scaleY(1);
+        }
+
+
+        li {
+            margin-bottom: $small;
+            &:not(:last-of-type) {
+            }
+            label {
+                padding: 0 $small;
+                display: block;
+                margin-bottom: 0;
+                color: $white;
+                font-size: 14px;
+                cursor: pointer;
+                border-right: 2px solid transparent;
+                border-left: 2px solid transparent;
+                transition: all .5s;
+                &:hover {
+                    border-right-color: $sub-color;
+                    border-left-color: $sub-color;
+                    color: $sub-color;
+                }
+            }
+            input {
+                display: none;
+
+                &:checked ~ label {
+                    border-right-color: $sub-color;
+                    border-left-color: $sub-color;
+                    color: $sub-color;
+                }
+            }
+        }
+    }
+}

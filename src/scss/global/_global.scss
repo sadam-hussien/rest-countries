@@ -1,0 +1,21 @@
+body {
+    font-family: $main-font;
+    overflow-x: hidden;
+}
+
+.page {
+    min-height: calc(100vh - #{$header});
+    padding-top: $large;
+    padding-bottom: $large;
+    overflow-x: hidden;
+}
+
+.head-content-area {
+    margin-bottom: $large;
+}
+
+button, input, textarea, select {
+    &:focus {
+        outline: none;
+    }
+}

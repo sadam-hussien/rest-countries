@@ -1,0 +1,28 @@
+.my-btn {
+    background: $dark-mode-el;
+    color: $white;
+    display: flex;
+    align-items: center;
+    min-width: 100px;
+    height: 35px;
+    padding: 0 $medium;
+    border: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    box-shadow: 0 0 10px rgba($dark, .3);
+    transition: all .5s;
+    span {
+        color: $light-mode-inp;
+        margin-left: $small;
+        transition: all .5s;
+
+    }
+
+    &:hover {
+        span {
+            color: $white;
+            margin-left: $medium;
+        }
+    }
+
+}

@@ -1,0 +1,34 @@
+.main-header {
+    height: $header;
+    box-shadow: 0 10px 5px rgba($dark, 1);
+
+    // start the-logo
+    .the-logo {
+        .text {
+            color: $white;
+            font-weight: 600;
+            &::first-letter {
+                text-transform: uppercase;
+            }
+        }
+    }
+    // ==== end the-logo
+
+    // start the-mode
+    .the-mode {
+        .box-mode {
+            background: transparent;
+            padding: 0;
+            border: none;
+            color: $white;
+            display: flex;
+            align-items: center;
+            span {
+                margin-left: 5px;
+                text-transform: capitalize;
+            }
+        }
+    }
+    // ==== end the-mode
+
+}

@@ -1,0 +1,68 @@
+.light-theme {
+
+    .main-header {
+        background: $white;
+
+        .the-logo .text {
+            color: $light-mode-text;
+        }
+
+        .the-mode .box-mode {
+            color: $light-mode-text;
+        }
+    }
+
+    .page {
+        background: $light-mode-bg;
+    }
+
+    .search-area, .select-filter .filter-result {
+        background: $white;
+        box-shadow: 0 0 10px rgba($dark, .1);
+        color: $light-mode-text;
+        input {
+            color: $light-mode-text;
+        }
+        label {
+            color: $light-mode-text;
+        }
+    }
+
+    .select-filter .filter-list {
+        background: $white;
+
+        label {
+            color: $light-mode-text;
+        }
+    }
+
+    .country-box {
+        background: $white;
+        box-shadow: 0 0 10px rgba($dark, .1);
+
+        .content {
+            color: $light-mode-text;
+            .text {
+
+            }
+        }
+    }
+
+    .my-btn {
+        background: $white;
+        color: $light-mode-text;
+
+        &:hover {
+            span {
+                color: $light-mode-text;
+            }
+        }
+    }
+    .country-details {
+        color: $light-mode-text !important;
+    }
+
+    .border-text {
+        background: $white !important;
+    }
+}
